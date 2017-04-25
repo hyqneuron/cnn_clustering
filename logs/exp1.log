@@ -1,0 +1,1196 @@
+Sequential (
+  (conv1_1): Sequential (
+    (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (conv1_2): Sequential (
+    (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (pool1): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
+  (conv2_1): Sequential (
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (conv2_2): Sequential (
+    (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (pool2): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
+  (conv3_1): Sequential (
+    (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (conv3_2): Sequential (
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (pool3): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
+  (conv4_1): Sequential (
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (conv4_2): Sequential (
+    (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (pool4): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
+  (conv5_1): Sequential (
+    (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (conv5_2): Sequential (
+    (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (pool5): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
+  (fc6): Sequential (
+    (0): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+    (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True)
+    (2): ReLU (inplace)
+  )
+  (logit): Conv2d(256, 40, kernel_size=(1, 1), stride=(1, 1))
+  (flatter): Flatten()
+)
+{'batch_size': 128,
+ 'force_name': True,
+ 'graphfolder': 'logs/exp1_graphs/',
+ 'learning_rate': 0.1,
+ 'logfile': 'logs/exp1.log',
+ 'mode': '',
+ 'name': 'exp1',
+ 'num_base': 32,
+ 'num_centroids': 40,
+ 'optimizer': 'SGD',
+ 'use_batchnorm': True,
+ 'weight_decay': 0.0005}
+Epoch 0, Batch 50
+
+
+Columns 0 to 12 
+  163   388   153   164   148   165   146   151   173   141   140   179   150
+
+Columns 13 to 25 
+  169   153   143   143   151   157   166   144   185   151   136   167   157
+
+Columns 26 to 38 
+  158   168   145   144   145   161   135   154   145   155   154   146   168
+
+Columns 39 to 39 
+  139
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 0, Batch 100
+
+
+Columns 0 to 12 
+  169   426   155   149   154   167   153   126   149   166   141   140   157
+
+Columns 13 to 25 
+  153   162   140   153   162   165   145   149   156   153   148   166   155
+
+Columns 26 to 38 
+  152   142   130   146   166   159   149   138   163   148   176   165   141
+
+Columns 39 to 39 
+  166
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 0, Batch 150
+
+
+Columns 0 to 12 
+  134   433   160   141   152   154   154   145   129   145   162   148   138
+
+Columns 13 to 25 
+  157   148   162   157   177   137   150   146   171   158   165   155   163
+
+Columns 26 to 38 
+  159   146   159   159   187   157   155   142   147   143   132   144   172
+
+Columns 39 to 39 
+  157
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 0, Batch 200
+
+
+Columns 0 to 12 
+  163   402   179   154   135   150   161   155   172   159   142   129   150
+
+Columns 13 to 25 
+  160   154   163   145   154   161   165   159   147   164   170   143   168
+
+Columns 26 to 38 
+  150   142   125   167   156   146   151   159   150   139   143   153   160
+
+Columns 39 to 39 
+  155
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 0, Batch 250
+
+
+Columns 0 to 12 
+  172   413   159   141   165   137   149   171   139   140   151   143   152
+
+Columns 13 to 25 
+  146   136   152   147   185   173   165   135   140   154   147   146   144
+
+Columns 26 to 38 
+  184   165   132   150   156   132   152   166   152   147   171   142   174
+
+Columns 39 to 39 
+  175
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 0, Batch 300
+
+
+Columns 0 to 12 
+  161   409   131   153   164   153   149   161   153   150   163   155   156
+
+Columns 13 to 25 
+  151   136   156   176   167   155   156   158   145   149   150   155   133
+
+Columns 26 to 38 
+  154   158   130   152   150   148   162   182   176   137   130   134   160
+
+Columns 39 to 39 
+  182
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 0, Batch 350
+
+
+Columns 0 to 12 
+  148   419   137   165   150   145   137   156   146   156   176   188   145
+
+Columns 13 to 25 
+  163   167   156   161   144   145   147   157   161   158   153   152   172
+
+Columns 26 to 38 
+  148   154   128   160   148   130   132   148   156   181   134   154   162
+
+Columns 39 to 39 
+  161
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 50
+
+
+Columns 0 to 12 
+  255   782   281   273   274   276   294   256   292   253   298   277   278
+
+Columns 13 to 25 
+  278   296   310   280   295   295   252   255   284   290   289   251   272
+
+Columns 26 to 38 
+  296   279   277   300   259   266   275   266   255   275   245   281   289
+
+Columns 39 to 39 
+  301
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 100
+
+
+Columns 0 to 12 
+  163   416   163   155   146   140   134   151   153   150   151   148   142
+
+Columns 13 to 25 
+  154   133   173   147   144   171   159   162   167   169   166   156   172
+
+Columns 26 to 38 
+  151   157   150   153   162   142   147   166   133   164   147   147   157
+
+Columns 39 to 39 
+  139
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 150
+
+
+Columns 0 to 12 
+  158   408   172   165   164   152   140   145   151   151   138   155   160
+
+Columns 13 to 25 
+  143   146   152   142   160   152   157   148   165   154   146   139   129
+
+Columns 26 to 38 
+  157   148   154   163   148   171   173   148   159   148   162   167   143
+
+Columns 39 to 39 
+  167
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 200
+
+
+Columns 0 to 12 
+  144   409   162   134   152   150   161   147   163   144   154   145   158
+
+Columns 13 to 25 
+  169   148   168   154   159   164   158   148   150   155   153   176   132
+
+Columns 26 to 38 
+  152   128   144   137   147   166   150   147   154   165   158   151   161
+
+Columns 39 to 39 
+  183
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 250
+
+
+Columns 0 to 12 
+  149   439   152   168   154   167   130   164   185   160   146   164   143
+
+Columns 13 to 25 
+  147   162   158   138   160   147   155   144   142   142   145   174   174
+
+Columns 26 to 38 
+  150   138   146   154   149   159   176   141   138   120   170   138   156
+
+Columns 39 to 39 
+  156
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 300
+
+
+Columns 0 to 12 
+  169   433   155   160   150   125   113   158   155   150   171   134   161
+
+Columns 13 to 25 
+  142   145   155   175   154   148   169   166   132   158   163   153   148
+
+Columns 26 to 38 
+  165   148   167   157   174   161   134   156   152   155   150   147   153
+
+Columns 39 to 39 
+  140
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 1, Batch 350
+
+
+Columns 0 to 12 
+  154   427   164   147   133   163   172   128   170   137   166   137   140
+
+Columns 13 to 25 
+  144   161   157   160   172   159   157   161   148   148   163   167   150
+
+Columns 26 to 38 
+  152   131   145   150   158   146   139   165   154   160   155   140   166
+
+Columns 39 to 39 
+  154
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 50
+
+
+Columns 0 to 12 
+  270   790   276   321   293   244   269   256   301   287   275   323   278
+
+Columns 13 to 25 
+  305   297   263   287   303   281   265   279   265   251   249   262   294
+
+Columns 26 to 38 
+  272   266   284   275   252   246   255   291   277   298   266   297   263
+
+Columns 39 to 39 
+  274
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 100
+
+
+Columns 0 to 12 
+  185   421   141   128   131   144   173   145   142   169   156   157   142
+
+Columns 13 to 25 
+  148   163   149   147   154   162   170   157   148   157   149   137   146
+
+Columns 26 to 38 
+  139   156   171   135   162   154   159   157   154   168   170   148   153
+
+Columns 39 to 39 
+  153
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 150
+
+
+Columns 0 to 12 
+  152   414   163   136   148   177   135   153   147   160   140   155   168
+
+Columns 13 to 25 
+  168   166   159   130   150   156   145   175   146   133   164   163   168
+
+Columns 26 to 38 
+  150   140   163   151   183   172   162   149   137   158   130   151   134
+
+Columns 39 to 39 
+  149
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 200
+
+
+Columns 0 to 12 
+  153   440   153   153   161   179   145   125   148   139   172   164   134
+
+Columns 13 to 25 
+  153   151   148   159   156   148   154   154   162   173   164   164   140
+
+Columns 26 to 38 
+  162   143   137   160   149   172   156   135   161   160   140   138   145
+
+Columns 39 to 39 
+  150
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 250
+
+
+Columns 0 to 12 
+  143   402   147   172   157   169   156   168   149   166   161   162   147
+
+Columns 13 to 25 
+  142   162   149   168   143   147   161   162   183   153   148   152   142
+
+Columns 26 to 38 
+  151   124   159   163   160   160   151   149   153   141   156   121   140
+
+Columns 39 to 39 
+  161
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 300
+
+
+Columns 0 to 12 
+  164   422   179   152   161   173   120   166   156   151   148   165   162
+
+Columns 13 to 25 
+  156   148   136   139   147   141   156   141   169   169   142   151   145
+
+Columns 26 to 38 
+  129   166   162   161   159   171   159   163   160   119   160   138   143
+
+Columns 39 to 39 
+  151
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 2, Batch 350
+
+
+Columns 0 to 12 
+  147   425   159   160   135   133   159   167   148   154   154   124   117
+
+Columns 13 to 25 
+  155   166   146   152   170   149   153   155   175   140   167   159   174
+
+Columns 26 to 38 
+  159   158   170   143   160   147   155   156   137   170   153   146   146
+
+Columns 39 to 39 
+  157
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 50
+
+
+Columns 0 to 12 
+  264   727   276   310   270   253   267   260   282   289   268   288   266
+
+Columns 13 to 25 
+  263   287   273   264   294   269   290   277   263   333   297   273   274
+
+Columns 26 to 38 
+  312   280   276   264   266   273   277   280   298   284   266   271   308
+
+Columns 39 to 39 
+  268
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 100
+
+
+Columns 0 to 12 
+  146   437   153   129   152   174   143   163   142   157   153   157   161
+
+Columns 13 to 25 
+  170   159   130   153   140   153   145   154   158   146   130   164   164
+
+Columns 26 to 38 
+  149   165   180   142   149   152   143   144   145   138   170   154   181
+
+Columns 39 to 39 
+  155
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 150
+
+
+Columns 0 to 12 
+  139   428   134   160   167   160   136   131   173   160   161   150   125
+
+Columns 13 to 25 
+  164   137   141   168   155   155   164   140   139   157   164   151   140
+
+Columns 26 to 38 
+  172   150   154   154   146   163   141   162   154   154   173   157   170
+
+Columns 39 to 39 
+  151
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 200
+
+
+Columns 0 to 12 
+  153   419   154   157   142   147   155   158   143   148   163   179   172
+
+Columns 13 to 25 
+  160   146   142   164   154   160   168   147   166   151   130   151   170
+
+Columns 26 to 38 
+  116   125   132   164   148   163   172   129   164   171   153   136   170
+
+Columns 39 to 39 
+  158
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 250
+
+
+Columns 0 to 12 
+  149   425   149   161   157   133   159   177   162   161   162   137   149
+
+Columns 13 to 25 
+  132   162   141   153   155   159   184   145   135   154   147   159   152
+
+Columns 26 to 38 
+  160   147   174   148   151   138   147   160   154   145   150   159   151
+
+Columns 39 to 39 
+  157
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 300
+
+
+Columns 0 to 12 
+  146   444   142   135   161   154   154   166   147   150   151   155   140
+
+Columns 13 to 25 
+  148   142   191   150   147   161   154   161   142   173   155   150   146
+
+Columns 26 to 38 
+  165   147   151   156   169   166   148   149   143   154   147   155   137
+
+Columns 39 to 39 
+  148
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 3, Batch 350
+
+
+Columns 0 to 12 
+  168   394   145   143   169   163   157   182   163   142   158   153   149
+
+Columns 13 to 25 
+  167   145   140   153   140   151   161   159   138   130   157   153   149
+
+Columns 26 to 38 
+  146   153   151   137   141   166   159   161   186   162   144   162   150
+
+Columns 39 to 39 
+  153
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 50
+
+
+Columns 0 to 12 
+  310   776   262   279   267   288   256   308   284   305   278   281   288
+
+Columns 13 to 25 
+  293   284   264   264   289   278   272   285   246   268   272   260   288
+
+Columns 26 to 38 
+  252   290   290   270   279   269   270   283   286   297   286   246   275
+
+Columns 39 to 39 
+  262
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 100
+
+
+Columns 0 to 12 
+  141   423   143   163   133   163   179   174   163   145   141   135   141
+
+Columns 13 to 25 
+  147   156   164   130   177   149   138   157   154   142   160   145   164
+
+Columns 26 to 38 
+  146   151   165   147   149   161   152   163   163   140   153   160   163
+
+Columns 39 to 39 
+  160
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 150
+
+
+Columns 0 to 12 
+  144   404   162   156   166   165   150   145   146   149   150   151   176
+
+Columns 13 to 25 
+  126   154   161   146   161   163   160   161   155   174   151   162   152
+
+Columns 26 to 38 
+  147   152   137   160   152   181   151   146   165   140   151   134   139
+
+Columns 39 to 39 
+  155
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 200
+
+
+Columns 0 to 12 
+  164   397   174   148   163   139   147   133   154   147   170   164   153
+
+Columns 13 to 25 
+  147   186   147   158   150   163   127   155   126   158   156   163   163
+
+Columns 26 to 38 
+  130   162   141   145   156   149   134   180   141   157   173   162   145
+
+Columns 39 to 39 
+  173
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 250
+
+
+Columns 0 to 12 
+  158   442   139   151   140   146   145   139   144   173   162   153   164
+
+Columns 13 to 25 
+  171   139   145   154   147   153   168   148   154   138   172   140   144
+
+Columns 26 to 38 
+  153   152   147   149   148   153   186   144   169   131   163   136   157
+
+Columns 39 to 39 
+  183
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 300
+
+
+Columns 0 to 12 
+  151   417   144   165   158   161   172   167   134   176   162   175   149
+
+Columns 13 to 25 
+  155   142   175   168   156   129   171   145   155   126   146   143   153
+
+Columns 26 to 38 
+  159   162   149   163   142   131   154   136   159   138   159   157   158
+
+Columns 39 to 39 
+  138
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 4, Batch 350
+
+
+Columns 0 to 12 
+  141   422   156   134   145   135   144   157   133   166   131   151   174
+
+Columns 13 to 25 
+  150   143   136   141   142   146   189   151   156   140   156   143   181
+
+Columns 26 to 38 
+  148   169   168   150   156   170   174   176   152   142   158   142   163
+
+Columns 39 to 39 
+  169
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 50
+
+
+Columns 0 to 12 
+  275   746   262   253   278   250   283   304   311   280   287   281   317
+
+Columns 13 to 25 
+  286   291   304   259   285   244   302   278   297   285   288   300   270
+
+Columns 26 to 38 
+  288   256   296   258   255   261   278   275   271   262   284   272   249
+
+Columns 39 to 39 
+  279
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 100
+
+
+Columns 0 to 12 
+  152   390   157   155   167   148   163   183   141   148   154   162   144
+
+Columns 13 to 25 
+  142   169   163   170   155   125   149   138   132   158   159   152   146
+
+Columns 26 to 38 
+  155   154   156   158   135   169   161   167   142   143   162   158   143
+
+Columns 39 to 39 
+  175
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 150
+
+
+Columns 0 to 12 
+  147   408   157   164   144   173   173   118   156   164   145   168   158
+
+Columns 13 to 25 
+  152   161   165   176   165   129   140   176   137   139   166   159   156
+
+Columns 26 to 38 
+  150   151   152   150   162   146   170   143   136   150   152   158   138
+
+Columns 39 to 39 
+  146
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 200
+
+
+Columns 0 to 12 
+  164   414   140   163   120   177   152   166   166   149   143   157   157
+
+Columns 13 to 25 
+  144   157   155   174   147   178   171   145   156   149   159   162   143
+
+Columns 26 to 38 
+  138   176   136   159   134   144   167   155   159   135   135   153   127
+
+Columns 39 to 39 
+  174
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 250
+
+
+Columns 0 to 12 
+  161   429   181   157   153   153   157   166   164   162   130   136   136
+
+Columns 13 to 25 
+  159   152   170   153   175   142   150   170   146   134   156   142   157
+
+Columns 26 to 38 
+  155   153   150   167   163   128   137   146   149   144   163   138   163
+
+Columns 39 to 39 
+  153
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 300
+
+
+Columns 0 to 12 
+  171   409   151   162   164   156   126   159   143   149   152   150   151
+
+Columns 13 to 25 
+  136   145   168   129   149   157   149   142   169   170   155   178   143
+
+Columns 26 to 38 
+  160   166   167   153   172   158   149   159   135   141   153   163   154
+
+Columns 39 to 39 
+  137
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 5, Batch 350
+
+
+Columns 0 to 12 
+  145   422   165   147   133   151   150   166   156   159   139   155   163
+
+Columns 13 to 25 
+  163   157   128   166   153   167   158   163   163   172   134   134   174
+
+Columns 26 to 38 
+  147   158   154   169   161   150   164   147   140   143   155   144   137
+
+Columns 39 to 39 
+  148
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 50
+
+
+Columns 0 to 12 
+  270   712   282   264   307   326   311   274   265   304   301   301   273
+
+Columns 13 to 25 
+  278   291   277   264   257   259   288   290   284   274   277   265   274
+
+Columns 26 to 38 
+  263   307   256   268   313   249   281   279   269   283   279   245   264
+
+Columns 39 to 39 
+  276
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 100
+
+
+Columns 0 to 12 
+  144   397   157   165   141   177   146   154   169   144   149   172   140
+
+Columns 13 to 25 
+  150   154   160   144   180   151   141   157   172   179   145   170   142
+
+Columns 26 to 38 
+  143   144   147   140   143   171   147   155   145   152   150   159   151
+
+Columns 39 to 39 
+  153
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 150
+
+
+Columns 0 to 12 
+  142   435   148   169   160   148   130   163   140   166   148   148   132
+
+Columns 13 to 25 
+  152   169   147   171   173   153   139   163   141   156   139   139   160
+
+Columns 26 to 38 
+  155   151   176   165   158   135   137   134   164   140   148   172   174
+
+Columns 39 to 39 
+  160
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 200
+
+
+Columns 0 to 12 
+  143   421   152   157   150   145   168   144   155   152   144   140   154
+
+Columns 13 to 25 
+  128   145   147   173   158   144   137   164   171   148   160   153   156
+
+Columns 26 to 38 
+  167   161   145   150   149   135   158   160   147   146   178   156   167
+
+Columns 39 to 39 
+  172
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 250
+
+
+Columns 0 to 12 
+  153   424   159   137   155   144   156   150   159   153   160   163   168
+
+Columns 13 to 25 
+  166   166   161   160   164   125   163   176   176   150   141   126   169
+
+Columns 26 to 38 
+  148   131   148   145   151   138   158   166   148   154   156   137   151
+
+Columns 39 to 39 
+  145
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 300
+
+
+Columns 0 to 12 
+  161   445   139   130   147   152   164   169   140   162   143   160   146
+
+Columns 13 to 25 
+  153   138   143   139   164   162   159   155   153   159   154   145   180
+
+Columns 26 to 38 
+  157   152   163   149   167   175   152   152   143   133   141   144   142
+
+Columns 39 to 39 
+  168
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 6, Batch 350
+
+
+Columns 0 to 12 
+  160   414   151   149   150   169   169   154   155   155   157   168   157
+
+Columns 13 to 25 
+  166   166   162   150   147   156   145   136   132   154   164   143   159
+
+Columns 26 to 38 
+  149   128   153   152   182   161   138   126   144   173   143   152   153
+
+Columns 39 to 39 
+  158
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 50
+
+
+Columns 0 to 12 
+  260   771   280   266   269   244   276   296   298   271   291   287   301
+
+Columns 13 to 25 
+  295   263   271   278   273   282   274   302   258   272   277   283   253
+
+Columns 26 to 38 
+  286   285   260   282   293   256   285   291   291   261   288   266   271
+
+Columns 39 to 39 
+  294
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 100
+
+
+Columns 0 to 12 
+  161   412   177   178   154   136   133   141   157   170   172   136   174
+
+Columns 13 to 25 
+  171   140   145   175   158   156   140   152   160   149   146   159   137
+
+Columns 26 to 38 
+  151   151   140   156   176   146   148   160   161   144   126   151   151
+
+Columns 39 to 39 
+  150
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 150
+
+
+Columns 0 to 12 
+  141   421   161   145   141   125   146   160   153   162   152   176   136
+
+Columns 13 to 25 
+  163   162   156   137   149   161   150   169   149   153   176   164   147
+
+Columns 26 to 38 
+  154   135   154   147   160   143   157   154   151   141   161   157   157
+
+Columns 39 to 39 
+  174
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 200
+
+
+Columns 0 to 12 
+  158   434   136   157   151   168   140   161   149   171   142   153   182
+
+Columns 13 to 25 
+  134   165   144   152   150   151   167   159   166   148   155   147   150
+
+Columns 26 to 38 
+  167   156   157   141   145   184   149   128   160   149   146   143   136
+
+Columns 39 to 39 
+  149
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 250
+
+
+Columns 0 to 12 
+  138   420   136   160   181   146   164   141   175   128   150   160   160
+
+Columns 13 to 25 
+  146   150   138   145   175   140   164   128   149   153   175   141   152
+
+Columns 26 to 38 
+  170   174   153   149   153   149   157   143   119   168   147   174   168
+
+Columns 39 to 39 
+  161
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 300
+
+
+Columns 0 to 12 
+  152   432   156   149   175   135   148   151   133   157   146   145   168
+
+Columns 13 to 25 
+  164   151   156   168   142   147   159   164   164   149   155   149   144
+
+Columns 26 to 38 
+  152   132   162   141   151   161   165   146   154   153   154   144   159
+
+Columns 39 to 39 
+  167
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 7, Batch 350
+
+
+Columns 0 to 12 
+  145   398   145   145   177   143   180   172   170   171   141   150   166
+
+Columns 13 to 25 
+  151   162   157   137   138   143   189   150   165   136   154   155   136
+
+Columns 26 to 38 
+  138   159   159   126   142   162   159   142   174   157   170   150   146
+
+Columns 39 to 39 
+  140
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 50
+
+
+Columns 0 to 12 
+  290   766   299   281   299   255   284   278   258   287   284   283   268
+
+Columns 13 to 25 
+  294   271   268   243   277   267   278   260   268   281   289   290   265
+
+Columns 26 to 38 
+  267   280   262   327   267   281   307   264   260   294   285   274   275
+
+Columns 39 to 39 
+  274
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 100
+
+
+Columns 0 to 12 
+  161   391   171   155   158   167   143   156   171   151   177   157   135
+
+Columns 13 to 25 
+  168   160   168   143   150   150   153   146   150   154   146   173   161
+
+Columns 26 to 38 
+  145   153   159   151   136   158   149   156   137   147   157   150   149
+
+Columns 39 to 39 
+  138
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 150
+
+
+Columns 0 to 12 
+  153   432   159   155   160   158   164   136   179   152   152   133   169
+
+Columns 13 to 25 
+  149   136   128   157   166   148   142   153   152   106   167   161   160
+
+Columns 26 to 38 
+  150   162   126   184   153   151   153   172   149   154   150   171   151
+
+Columns 39 to 39 
+  147
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 200
+
+
+Columns 0 to 12 
+  168   421   145   174   145   157   162   141   166   138   150   167   123
+
+Columns 13 to 25 
+  145   128   169   148   150   169   136   167   150   156   161   133   149
+
+Columns 26 to 38 
+  188   169   144   159   151   167   157   136   145   166   169   151   127
+
+Columns 39 to 39 
+  153
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 250
+
+
+Columns 0 to 12 
+  140   464   150   166   156   171   147   168   166   155   143   149   141
+
+Columns 13 to 25 
+  137   139   166   126   147   149   159   150   149   152   134   162   167
+
+Columns 26 to 38 
+  150   164   136   148   157   148   166   148   176   139   169   160   138
+
+Columns 39 to 39 
+  148
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 300
+
+
+Columns 0 to 12 
+  153   434   144   154   160   156   170   136   160   162   145   129   156
+
+Columns 13 to 25 
+  140   163   149   140   152   150   138   157   145   160   158   152   143
+
+Columns 26 to 38 
+  139   167   176   158   154   152   145   158   155   177   148   155   158
+
+Columns 39 to 39 
+  152
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 8, Batch 350
+
+
+Columns 0 to 12 
+  152   417   165   147   154   163   117   145   165   155   146   165   174
+
+Columns 13 to 25 
+  165   154   162   157   150   144   159   156   157   140   165   160   155
+
+Columns 26 to 38 
+  158   143   143   130   159   150   161   142   152   144   168   161   160
+
+Columns 39 to 39 
+  140
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 50
+
+
+Columns 0 to 12 
+  259   708   276   314   311   269   280   254   306   273   286   299   287
+
+Columns 13 to 25 
+  272   283   266   220   277   263   274   265   268   294   248   270   307
+
+Columns 26 to 38 
+  270   264   268   282   315   318   295   296   296   274   256   298   285
+
+Columns 39 to 39 
+  254
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 100
+
+
+Columns 0 to 12 
+  163   405   168   141   155   146   156   159   158   167   150   145   158
+
+Columns 13 to 25 
+  168   138   170   171   149   169   153   173   146   136   155   143   148
+
+Columns 26 to 38 
+  156   156   144   133   140   163   147   161   152   143   158   158   139
+
+Columns 39 to 39 
+  160
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 150
+
+
+Columns 0 to 12 
+  149   415   165   151   161   147   150   146   151   156   148   164   181
+
+Columns 13 to 25 
+  156   150   164   158   145   140   172   164   144   150   139   163   160
+
+Columns 26 to 38 
+  148   151   148   165   145   147   144   161   152   157   163   145   149
+
+Columns 39 to 39 
+  136
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 200
+
+
+Columns 0 to 12 
+  163   428   157   155   142   122   159   153   148   156   161   145   148
+
+Columns 13 to 25 
+  140   184   144   186   131   162   147   161   157   163   162   168   168
+
+Columns 26 to 38 
+  152   165   140   149   165   150   146   148   164   137   143   152   146
+
+Columns 39 to 39 
+  133
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 250
+
+
+Columns 0 to 12 
+  150   399   151   151   170   140   161   158   159   165   135   154   169
+
+Columns 13 to 25 
+  139   153   173   165   133   147   146   167   128   175   159   174   160
+
+Columns 26 to 38 
+  157   148   167   162   145   171   141   143   158   135   156   144   144
+
+Columns 39 to 39 
+  148
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 300
+
+
+Columns 0 to 12 
+  157   416   126   160   131   169   140   137   148   141   164   140   157
+
+Columns 13 to 25 
+  153   180   168   142   165   151   167   172   156   150   162   150   176
+
+Columns 26 to 38 
+  166   152   171   162   159   146   151   160   125   149   129   150   145
+
+Columns 39 to 39 
+  157
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
+Epoch 9, Batch 350
+
+
+Columns 0 to 12 
+  140   406   158   140   157   162   145   155   173   169   147   149   141
+
+Columns 13 to 25 
+  144   147   154   162   154   147   154   162   128   154   157   155   153
+
+Columns 26 to 38 
+  164   151   175   171   173   137   148   161   146   145   151   142   153
+
+Columns 39 to 39 
+  170
+[torch.cuda.FloatTensor of size 1x40 (GPU 0)]
+
